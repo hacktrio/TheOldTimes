@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     let apiKey = "olpx6Y2AeQIKAanvOmwukQgtiTXmCFgH"
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = "https://api.nytimes.com/svc/archive/v1/2019/1.json?api-key="+apiKey
+        let url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?&api-key="+apiKey
         Alamofire.request(url, method: .get)
             .responseJSON { response in
                 if let value = response.result.value{
