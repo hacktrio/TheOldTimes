@@ -12,18 +12,28 @@ import SwiftyJSON
 
 class ViewController: UIViewController {
     
-    var papers = [[String:Any]] ()
-    let apiKey = "olpx6Y2AeQIKAanvOmwukQgtiTXmCFgH"
+//    var papers = [[String:Any]] ()
+//    let apiKey = "olpx6Y2AeQIKAanvOmwukQgtiTXmCFgH"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?&api-key="+apiKey
-        Alamofire.request(url, method: .get)
-            .responseJSON { response in
-                if let value = response.result.value{
-                    let json = JSON(value)
-                    print(json)
-                }
-        }
+//        let url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?&api-key="+apiKey
+//        Alamofire.request(url, method: .get)
+//            .responseJSON { response in
+//                if let value = response.result.value{
+//                    let json = JSON(value)
+//                    print(json)
+//                }
+//        }
+        setupNavbar()
+       
+    }
+    
+    func setupNavbar() {
+        let searchController = UISearchController(searchResultsController: nil)
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+        
     }
 }
 
