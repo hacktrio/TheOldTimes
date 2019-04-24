@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UISearchBarDelegate {
     
 //    var papers = [[String:Any]] ()
 //    let apiKey = "olpx6Y2AeQIKAanvOmwukQgtiTXmCFgH"
@@ -30,9 +30,15 @@ class ViewController: UIViewController {
     }
     
     func setupNavbar() {
-        let searchController = UISearchController(searchResultsController: nil)
-        navigationItem.searchController = searchController
-        navigationItem.hidesSearchBarWhenScrolling = false
+        let searchBar = UISearchBar()
+        searchBar.delegate = self
+        searchBar.placeholder = "Search"
+        searchBar.showsCancelButton = false
+        searchBar.showsSearchResultsButton = true
+        searchBar.searchBarStyle = .minimal
+        
+        self.navigationItem.titleView = searchBar
+        
         
     }
 }
