@@ -8,6 +8,7 @@ target 'TheOldTimes' do
   # Pods for TheOldTimes
 	pod 'Alamofire'
 	pod 'SwiftyJSON'
+	pod 'Firebase/Core'
 
   target 'TheOldTimesTests' do
     inherit! :search_paths
