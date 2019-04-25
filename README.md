@@ -11,7 +11,7 @@ Group Project - README Template
 
 ## Overview
 ### Description
-[Description of your app]
+YourFolio is designed for students to share their apps, artwork, programs, and other innovation ideas they have with the rest of the community. This will allow them to build a portfolio to share with companies to land a job or an internship as well as get offers from companies who are interested in their work.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
