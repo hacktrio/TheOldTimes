@@ -11,7 +11,7 @@ Group Project - README Template
 
 ## Overview
 ### Description
-YourFolio is designed for students to share their apps, artwork, programs, and other innovation ideas they have with the rest of the community. This will allow them to build a portfolio to share with companies to land a job or an internship as well as get offers from companies who are interested in their work.
+YourFolio is designed to be an extention of Linkedin, for students or veterans to share their previous or current apps, artwork, personal projects, and other innovation ideas they have with the rest of the community, employers and companies. This will allow them to build a portfolio to share with companies to land a job or an internship as well as get offers from companies who are interested in their work.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
