@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB678FAC22751CB600DA5102 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB678FAB22751CB600DA5102 /* GoogleService-Info.plist */; };
 		DA785ED0225C1292009C23CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785ECF225C1292009C23CC /* AppDelegate.swift */; };
 		DA785ED2225C1292009C23CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785ED1225C1292009C23CC /* ViewController.swift */; };
 		DA785ED5225C1292009C23CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA785ED3225C1292009C23CC /* Main.storyboard */; };
@@ -15,7 +16,6 @@
 		DA785EDD225C1293009C23CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA785EDB225C1293009C23CC /* LaunchScreen.storyboard */; };
 		DA785EE8225C1293009C23CC /* TheOldTimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785EE7225C1293009C23CC /* TheOldTimesTests.swift */; };
 		DA785EF3225C1293009C23CC /* TheOldTimesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785EF2225C1293009C23CC /* TheOldTimesUITests.swift */; };
-		DAC440EE227256D3005052FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAC440ED227256D3005052FF /* GoogleService-Info.plist */; };
 		DE5F4059A0E8F369100AEF69 /* Pods_TheOldTimesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197B94C307097832D9A04677 /* Pods_TheOldTimesTests.framework */; };
 		E41A81D9EE18B60B7D527E75 /* Pods_TheOldTimes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C904908323354FBA8EF409D1 /* Pods_TheOldTimes.framework */; };
 		ED54054B0058EEA9D68D174B /* Pods_TheOldTimesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225ED3520D668A225632052C /* Pods_TheOldTimesUITests.framework */; };
@@ -47,6 +47,7 @@
 		98D532E26A473A02ADD56EAA /* Pods-TheOldTimes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheOldTimes.release.xcconfig"; path = "Target Support Files/Pods-TheOldTimes/Pods-TheOldTimes.release.xcconfig"; sourceTree = "<group>"; };
 		C904908323354FBA8EF409D1 /* Pods_TheOldTimes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheOldTimes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB1B318FD8AC82EEFE7EABFE /* Pods-TheOldTimes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheOldTimes.debug.xcconfig"; path = "Target Support Files/Pods-TheOldTimes/Pods-TheOldTimes.debug.xcconfig"; sourceTree = "<group>"; };
+		CB678FAB22751CB600DA5102 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA785ECC225C1292009C23CC /* TheOldTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheOldTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA785ECF225C1292009C23CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA785ED1225C1292009C23CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,7 +62,6 @@
 		DA785EEE225C1293009C23CC /* TheOldTimesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheOldTimesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA785EF2225C1293009C23CC /* TheOldTimesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheOldTimesUITests.swift; sourceTree = "<group>"; };
 		DA785EF4225C1293009C23CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAC440ED227256D3005052FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E75873BED842EB9C985C8FA2 /* Pods-TheOldTimesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheOldTimesTests.release.xcconfig"; path = "Target Support Files/Pods-TheOldTimesTests/Pods-TheOldTimesTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,9 +145,9 @@
 				DA785ED1225C1292009C23CC /* ViewController.swift */,
 				DA785ED3225C1292009C23CC /* Main.storyboard */,
 				DA785ED9225C1293009C23CC /* Assets.xcassets */,
-				DAC440ED227256D3005052FF /* GoogleService-Info.plist */,
 				DA785EDB225C1293009C23CC /* LaunchScreen.storyboard */,
 				DA785EDE225C1293009C23CC /* Info.plist */,
+				CB678FAB22751CB600DA5102 /* GoogleService-Info.plist */,
 				DA785ED6225C1292009C23CC /* TheOldTimes.xcdatamodeld */,
 			);
 			path = TheOldTimes;
@@ -280,7 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA785EDD225C1293009C23CC /* LaunchScreen.storyboard in Resources */,
-				DAC440EE227256D3005052FF /* GoogleService-Info.plist in Resources */,
+				CB678FAC22751CB600DA5102 /* GoogleService-Info.plist in Resources */,
 				DA785EDA225C1293009C23CC /* Assets.xcassets in Resources */,
 				DA785ED5225C1292009C23CC /* Main.storyboard in Resources */,
 			);
