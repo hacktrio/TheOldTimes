@@ -109,7 +109,7 @@ YourFolio is designed to be an extention of Linkedin, for students or veterans t
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="http://g.recordit.co/21kSyHruPL.gif" width=600>
+<img src="http://g.recordit.co/CYHGIjxiOE.gif" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
