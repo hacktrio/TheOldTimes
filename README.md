@@ -28,13 +28,17 @@ YourFolio is designed to be an extention of Linkedin, for students or veterans t
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* Show personal projects in gifs or images
+* Login and sign up
+* Being able to post
+* Contact Informations
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* Messaging
+* Connecting with peers
+* Search bar
+* Notifications
 
 ### 2. Screen Archetypes
 
