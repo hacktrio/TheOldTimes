@@ -39,36 +39,77 @@ YourFolio is designed to be an extention of Linkedin, for students or veterans t
 * Connecting with peers
 * Search bar
 * Notifications
+* Settings
+* User can like a photo
+* User can add a comment to a photo
+* User can see trending photos
+* User can search for photos by a hashtag
+* User can see a list of their followers
+* User can see a list of their followers
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Login/Register
+  * User can login and create a new account
+* Stream
+   * User can view a feed of photos
+   * User like a photo
+   * User can comment on a photo
+   * User can share a photo
+ * Detail
+   * User can view a post with more information
+   * User like a photo
+   * User can comment on a photo
+   * User can share a photo
+   
+* Creation
+   * User can post a new photo to their feed
+   * User can post a new video to their feed
+   * User can post a GIF to their feed
+* Profile
+   * User can view their name, biography, position, personal projects, background
+* Settings
+   * User can view and change their email, phone, password, notifications, privacy and security settings
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Home Feed
+* Search User
+* Creat a Post
+* Notifications
+* Messages
+* Profile
+* Settings
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Login/Register
+   * Home 
+   * Detailed Post
+* Profile
+   * Detailed Profile
+* Settings
+   * Privacy Settings
+   * Notification Settings
+   * Account Settings
+* Messages 
+   * List view of messages
+   * Detailed view of message
+* Search User
+   * List of users
+* Notifications
+   * List view of notifications
+   * Detailed view of post
+* Create a Post
+   * View of post creation
+   * Home View if post is created or canceled
+   
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="http://recordit.co/21kSyHruPL" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
