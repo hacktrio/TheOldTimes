@@ -19,6 +19,7 @@
 		DA785EDD225C1293009C23CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA785EDB225C1293009C23CC /* LaunchScreen.storyboard */; };
 		DA785EE8225C1293009C23CC /* TheOldTimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785EE7225C1293009C23CC /* TheOldTimesTests.swift */; };
 		DA785EF3225C1293009C23CC /* TheOldTimesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785EF2225C1293009C23CC /* TheOldTimesUITests.swift */; };
+		DAC440F822759119005052FF /* GoogleSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC440F722759119005052FF /* GoogleSignInViewController.swift */; };
 		DE5F4059A0E8F369100AEF69 /* Pods_TheOldTimesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197B94C307097832D9A04677 /* Pods_TheOldTimesTests.framework */; };
 		E41A81D9EE18B60B7D527E75 /* Pods_TheOldTimes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C904908323354FBA8EF409D1 /* Pods_TheOldTimes.framework */; };
 		ED54054B0058EEA9D68D174B /* Pods_TheOldTimesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225ED3520D668A225632052C /* Pods_TheOldTimesUITests.framework */; };
@@ -68,6 +69,7 @@
 		DA785EEE225C1293009C23CC /* TheOldTimesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheOldTimesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA785EF2225C1293009C23CC /* TheOldTimesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheOldTimesUITests.swift; sourceTree = "<group>"; };
 		DA785EF4225C1293009C23CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC440F722759119005052FF /* GoogleSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInViewController.swift; sourceTree = "<group>"; };
 		E75873BED842EB9C985C8FA2 /* Pods-TheOldTimesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheOldTimesTests.release.xcconfig"; path = "Target Support Files/Pods-TheOldTimesTests/Pods-TheOldTimesTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -184,6 +186,7 @@
 			children = (
 				DA785ECF225C1292009C23CC /* AppDelegate.swift */,
 				DA785ED3225C1292009C23CC /* Main.storyboard */,
+				DAC440F722759119005052FF /* GoogleSignInViewController.swift */,
 				DA785ED9225C1293009C23CC /* Assets.xcassets */,
 				DA785EDB225C1293009C23CC /* LaunchScreen.storyboard */,
 				DA785EDE225C1293009C23CC /* Info.plist */,
@@ -224,6 +227,7 @@
 				DA785EC9225C1292009C23CC /* Frameworks */,
 				DA785ECA225C1292009C23CC /* Resources */,
 				21032093B404AC8A127AF0DF /* [CP] Embed Pods Frameworks */,
+				4E32C9995B8CC22A0840BDAD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -379,6 +383,8 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TheOldTimes/Pods-TheOldTimes-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -388,6 +394,8 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -417,6 +425,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E32C9995B8CC22A0840BDAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheOldTimes/Pods-TheOldTimes-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheOldTimes/Pods-TheOldTimes-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5D3B23D67190E3509FB983FA /* [CP] Check Pods Manifest.lock */ = {
@@ -450,6 +480,7 @@
 			files = (
 				DA785ED2225C1292009C23CC /* ViewController.swift in Sources */,
 				DA785ED0225C1292009C23CC /* AppDelegate.swift in Sources */,
+				DAC440F822759119005052FF /* GoogleSignInViewController.swift in Sources */,
 				DA785ED8225C1292009C23CC /* TheOldTimes.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

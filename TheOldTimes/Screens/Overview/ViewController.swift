@@ -9,12 +9,15 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import Firebase
+import GoogleSignIn
 
 class ViewController: UIViewController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavbar()
+        
        
     }
     
