@@ -15,11 +15,14 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="5kO-HY-Otp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ChF-Wf-Rnd">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="6Lt-RL-Wqf" kind="relationship" relationship="viewControllers" id="xmM-f3-oa9"/>
+                        <segue destination="Lkp-2P-1TU" kind="relationship" relationship="viewControllers" id="V9y-wa-8jV"/>
+                        <segue destination="a17-va-M1E" kind="relationship" relationship="viewControllers" id="5pT-UP-YDY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjB-VC-RKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -34,7 +37,27 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fUu-vt-lOX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1128.985507246377" y="114.94565217391305"/>
+            <point key="canvasLocation" x="1030" y="-143"/>
+        </scene>
+        <!--FriendRequests-->
+        <scene sceneID="LtQ-0K-VWa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FriendRequests" id="Lkp-2P-1TU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Btf-DC-ksf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q4g-AX-tKU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="46"/>
+        </scene>
+        <!--Careers-->
+        <scene sceneID="yFI-rf-iDn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Careers" id="a17-va-M1E" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="dtU-HX-iNL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mBk-Ge-tVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023" y="243"/>
         </scene>
     </scenes>
 </document>
