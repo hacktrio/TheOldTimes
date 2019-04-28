@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CB678FAC22751CB600DA5102 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB678FAB22751CB600DA5102 /* GoogleService-Info.plist */; };
+		CB89B23F2275432F0089468F /* Overview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB89B23E2275432F0089468F /* Overview.storyboard */; };
+		CBCD4F0622754B0C00A1340C /* FriendRequests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCD4F0522754B0C00A1340C /* FriendRequests.storyboard */; };
+		CBCD4F0922754B4E00A1340C /* Careers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCD4F0822754B4E00A1340C /* Careers.storyboard */; };
 		DA785ED0225C1292009C23CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785ECF225C1292009C23CC /* AppDelegate.swift */; };
 		DA785ED2225C1292009C23CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785ED1225C1292009C23CC /* ViewController.swift */; };
 		DA785ED5225C1292009C23CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA785ED3225C1292009C23CC /* Main.storyboard */; };
@@ -48,6 +51,9 @@
 		C904908323354FBA8EF409D1 /* Pods_TheOldTimes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheOldTimes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB1B318FD8AC82EEFE7EABFE /* Pods-TheOldTimes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheOldTimes.debug.xcconfig"; path = "Target Support Files/Pods-TheOldTimes/Pods-TheOldTimes.debug.xcconfig"; sourceTree = "<group>"; };
 		CB678FAB22751CB600DA5102 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CB89B23E2275432F0089468F /* Overview.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Overview.storyboard; sourceTree = "<group>"; };
+		CBCD4F0522754B0C00A1340C /* FriendRequests.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FriendRequests.storyboard; sourceTree = "<group>"; };
+		CBCD4F0822754B4E00A1340C /* Careers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Careers.storyboard; sourceTree = "<group>"; };
 		DA785ECC225C1292009C23CC /* TheOldTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheOldTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA785ECF225C1292009C23CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA785ED1225C1292009C23CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +112,41 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CB89B23C227542EB0089468F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CB89B23D227543010089468F /* Overview */,
+				CBCD4F0422754A1600A1340C /* FriendRequests */,
+				CBCD4F0722754B1300A1340C /* Careers */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		CB89B23D227543010089468F /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				CB89B23E2275432F0089468F /* Overview.storyboard */,
+				DA785ED1225C1292009C23CC /* ViewController.swift */,
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
+		CBCD4F0422754A1600A1340C /* FriendRequests */ = {
+			isa = PBXGroup;
+			children = (
+				CBCD4F0522754B0C00A1340C /* FriendRequests.storyboard */,
+			);
+			path = FriendRequests;
+			sourceTree = "<group>";
+		};
+		CBCD4F0722754B1300A1340C /* Careers */ = {
+			isa = PBXGroup;
+			children = (
+				CBCD4F0822754B4E00A1340C /* Careers.storyboard */,
+			);
+			path = Careers;
+			sourceTree = "<group>";
+		};
 		D31A099D16B5D6E4B9F24F68 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,13 +183,13 @@
 			isa = PBXGroup;
 			children = (
 				DA785ECF225C1292009C23CC /* AppDelegate.swift */,
-				DA785ED1225C1292009C23CC /* ViewController.swift */,
 				DA785ED3225C1292009C23CC /* Main.storyboard */,
 				DA785ED9225C1293009C23CC /* Assets.xcassets */,
 				DA785EDB225C1293009C23CC /* LaunchScreen.storyboard */,
 				DA785EDE225C1293009C23CC /* Info.plist */,
 				CB678FAB22751CB600DA5102 /* GoogleService-Info.plist */,
 				DA785ED6225C1292009C23CC /* TheOldTimes.xcdatamodeld */,
+				CB89B23C227542EB0089468F /* Screens */,
 			);
 			path = TheOldTimes;
 			sourceTree = "<group>";
@@ -279,9 +320,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBCD4F0622754B0C00A1340C /* FriendRequests.storyboard in Resources */,
 				DA785EDD225C1293009C23CC /* LaunchScreen.storyboard in Resources */,
 				CB678FAC22751CB600DA5102 /* GoogleService-Info.plist in Resources */,
+				CBCD4F0922754B4E00A1340C /* Careers.storyboard in Resources */,
 				DA785EDA225C1293009C23CC /* Assets.xcassets in Resources */,
+				CB89B23F2275432F0089468F /* Overview.storyboard in Resources */,
 				DA785ED5225C1292009C23CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
