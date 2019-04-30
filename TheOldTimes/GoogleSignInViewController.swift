@@ -18,6 +18,14 @@ class GoogleSignInViewController: UIViewController, GIDSignInUIDelegate {
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().signIn()
     }
+    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
+                withError error: NSError!) {
+        if (error == nil) {
+           self.performSegue(withIdentifier: "overviewScreen", sender: nil)
+        } else {
+            print("Issues while trying to login user\(error.localizedDescription)")
+        }
+    }
     
 
     /*
