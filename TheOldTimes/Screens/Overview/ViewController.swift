@@ -16,6 +16,8 @@ class ViewController: UIViewController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBarController?.tabBar.isHidden = false
+
         setupNavbar()
         
        
