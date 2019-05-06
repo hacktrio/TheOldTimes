@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import Firebase
 
-class ShowChatLogController: UICollectionViewController {
+class ShowChatLogController: UICollectionViewController, UITextFieldDelegate {
+    
+    var ref: DatabaseReference!
 
-    let inputTextField: UITextField = {
+    lazy var inputTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Enter message..."
         textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.delegate = self
         return textField
     }()
     
@@ -66,9 +70,16 @@ class ShowChatLogController: UICollectionViewController {
     }
     
     @objc func handleSend() {
-        print(inputTextField.text)
+        let ref = Database.database().reference().child("messages")
+        let childRef = ref.childByAutoId()
+        let values = ["text": inputTextField.text!]
+        childRef.updateChildValues(values)
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        handleSend()
+        return true
+    }
 
     /*
     // MARK: - Navigation

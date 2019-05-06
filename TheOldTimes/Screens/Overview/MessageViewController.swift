@@ -14,7 +14,7 @@ class MessageViewController: UIViewController {
         super.viewDidLoad()
         self.tabBarController?.tabBar.isHidden = true
         let image = UIImage(named: "messageicon")
-        let messagebutton = UIBarButtonItem(image: image , style: .plain, target: self, action: #selector(showChatLog))
+        let messagebutton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showChatLog))
         self.navigationItem.rightBarButtonItem = messagebutton
     }
 
