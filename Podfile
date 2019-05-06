@@ -11,6 +11,7 @@ target 'TheOldTimes' do
 	pod 'Firebase/Core'
 	pod 'Firebase/Auth'
 	pod 'GoogleSignIn'
+	pod 'Firebase/Database'
 
   target 'TheOldTimesTests' do
     inherit! :search_paths

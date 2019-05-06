@@ -12,6 +12,10 @@ import Firebase
 
 class GoogleSignInViewController: UIViewController, GIDSignInUIDelegate {
 
+    @IBAction func tappedSigninLoginButton(_ sender: Any) {
+        let loginViewController = LoginViewController()
+        present(loginViewController, animated: true, completion: nil)
+    }
     @IBOutlet weak var loginImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
