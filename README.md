@@ -120,7 +120,7 @@ YourFolio is designed to be an extention of Linkedin, for students or veterans t
 
 ### Models
 
-Post
+**Post**
 
 | Property      | Type          | Description |
 | ------------- | ------------- | ------------- |
