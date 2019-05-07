@@ -118,7 +118,9 @@ YourFolio is designed to be an extention of Linkedin, for students or veterans t
 
 ## Schema 
 
-####Post
+### Models
+
+Post
 
 | Property      | Type          | Description |
 | ------------- | ------------- | ------------- |
@@ -133,8 +135,7 @@ YourFolio is designed to be an extention of Linkedin, for students or veterans t
 
 
 [This section will be completed in Unit 9]
-### Models
-[Add table of models]
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
