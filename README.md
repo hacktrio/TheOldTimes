@@ -113,9 +113,25 @@ YourFolio is designed to be an extention of Linkedin, for students or veterans t
 
 ### [BONUS] Digital Wireframes & Mockups
 
+
 ### [BONUS] Interactive Prototype
 
 ## Schema 
+
+####Post
+
+| Property      | Type          | Description |
+| ------------- | ------------- | ------------- |
+| objectId      | String        | unique id for the user post |
+| author        | Pointer to User  | image author. |
+| image         | file          | image that user posts. |
+| caption       | String  |  image caption by author. |
+| commentsCount | number  |  number of comments on the post. |
+| likeCount     | number. |  number of likes on the post. |
+| shareCount    | number. |  number of times it user's post has been shared. |
+| viewCount     | number. |  number of times it has been viewed. |
+
+
 [This section will be completed in Unit 9]
 ### Models
 [Add table of models]
