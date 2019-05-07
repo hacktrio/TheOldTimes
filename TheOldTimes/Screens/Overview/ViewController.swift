@@ -18,7 +18,26 @@ class ViewController: UIViewController, UISearchBarDelegate {
         super.viewDidLoad()
         setupNavbar()
         
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(handleLogout))
+        
+        //User is not logged in, user id (uid) does not exist
+        if Auth.auth().currentUser?.uid == nil {
+            perform(#selector(handleLogout), with: nil, afterDelay: 0)
+        }
        
+    }
+    
+    @objc func handleLogout() {
+        
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        
+        let loginController = LoginViewController()
+        present(loginController, animated: true, completion: nil)
     }
     
     func setupNavbar() {
