@@ -20,7 +20,12 @@
 		DA785EE8225C1293009C23CC /* TheOldTimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785EE7225C1293009C23CC /* TheOldTimesTests.swift */; };
 		DA785EF3225C1293009C23CC /* TheOldTimesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785EF2225C1293009C23CC /* TheOldTimesUITests.swift */; };
 		DAC440F822759119005052FF /* GoogleSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC440F722759119005052FF /* GoogleSignInViewController.swift */; };
+<<<<<<< HEAD
 		DAC440FE227FE570005052FF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC440FD227FE570005052FF /* LoginViewController.swift */; };
+=======
+		DAC440FA227D5139005052FF /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC440F9227D5139005052FF /* MessageViewController.swift */; };
+		DAC440FC227D5664005052FF /* ShowChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC440FB227D5664005052FF /* ShowChatLogController.swift */; };
+>>>>>>> feature/Chat
 		DE5F4059A0E8F369100AEF69 /* Pods_TheOldTimesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197B94C307097832D9A04677 /* Pods_TheOldTimesTests.framework */; };
 		E41A81D9EE18B60B7D527E75 /* Pods_TheOldTimes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C904908323354FBA8EF409D1 /* Pods_TheOldTimes.framework */; };
 		ED54054B0058EEA9D68D174B /* Pods_TheOldTimesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225ED3520D668A225632052C /* Pods_TheOldTimesUITests.framework */; };
@@ -71,7 +76,12 @@
 		DA785EF2225C1293009C23CC /* TheOldTimesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheOldTimesUITests.swift; sourceTree = "<group>"; };
 		DA785EF4225C1293009C23CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAC440F722759119005052FF /* GoogleSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInViewController.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		DAC440FD227FE570005052FF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Screens/Overview/LoginViewController.swift; sourceTree = "<group>"; };
+=======
+		DAC440F9227D5139005052FF /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		DAC440FB227D5664005052FF /* ShowChatLogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowChatLogController.swift; sourceTree = "<group>"; };
+>>>>>>> feature/Chat
 		E75873BED842EB9C985C8FA2 /* Pods-TheOldTimesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheOldTimesTests.release.xcconfig"; path = "Target Support Files/Pods-TheOldTimesTests/Pods-TheOldTimesTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +141,8 @@
 			children = (
 				CB89B23E2275432F0089468F /* Overview.storyboard */,
 				DA785ED1225C1292009C23CC /* ViewController.swift */,
+				DAC440F9227D5139005052FF /* MessageViewController.swift */,
+				DAC440FB227D5664005052FF /* ShowChatLogController.swift */,
 			);
 			path = Overview;
 			sourceTree = "<group>";
@@ -486,8 +498,13 @@
 				DA785ED2225C1292009C23CC /* ViewController.swift in Sources */,
 				DA785ED0225C1292009C23CC /* AppDelegate.swift in Sources */,
 				DAC440F822759119005052FF /* GoogleSignInViewController.swift in Sources */,
+<<<<<<< HEAD
 				DAC440FE227FE570005052FF /* LoginViewController.swift in Sources */,
+=======
+				DAC440FC227D5664005052FF /* ShowChatLogController.swift in Sources */,
+>>>>>>> feature/Chat
 				DA785ED8225C1292009C23CC /* TheOldTimes.xcdatamodeld in Sources */,
+				DAC440FA227D5139005052FF /* MessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
