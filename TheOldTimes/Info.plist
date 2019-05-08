@@ -28,14 +28,6 @@
 				<string>com.googleusercontent.apps.681253552832-s0v71li6tbr7b7uqdg6a8r4qlpcvneen</string>
 			</array>
 		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>com.HackTrio.YourFolio</string>
-			</array>
-		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
