@@ -36,8 +36,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
             Auth.auth().signInAndRetrieveData(with: credential) { (result, error) in
                 if error == nil {
-                    self.presentOverviewScreen()
+//                    self.presentOverviewScreen()
+                    print(error)
                 } else {
+                    guard let uid = Auth.auth().currentUser?.uid else { return }
                     print(error?.localizedDescription)
                 }
             }
