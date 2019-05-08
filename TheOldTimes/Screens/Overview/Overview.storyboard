@@ -39,33 +39,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="mLA-nB-K8w">
                         <barButtonItem key="leftBarButtonItem" title="Profile" id="EHK-kc-Ibx"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="s07-qb-y0K">
-                            <connections>
-                                <segue destination="U6A-f5-xDR" kind="show" id="5Ob-Ge-fpI"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="s07-qb-y0K"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1955.072463768116" y="114.1304347826087"/>
-        </scene>
-        <!--Message View Controller-->
-        <scene sceneID="CuV-I9-WBO">
-            <objects>
-                <viewController id="U6A-f5-xDR" customClass="MessageViewController" customModule="TheOldTimes" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="S6c-XW-tCz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="hn6-19-fGp"/>
-                    </view>
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="td1-5P-9KY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2666" y="111"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BzW-Un-pS5">

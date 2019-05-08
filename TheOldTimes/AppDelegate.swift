@@ -37,7 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             Auth.auth().signInAndRetrieveData(with: credential) { (result, error) in
                 if error == nil {
 //                    self.presentOverviewScreen()
-                    print(error)
                 } else {
                     guard let uid = Auth.auth().currentUser?.uid else { return }
                     print(error?.localizedDescription)

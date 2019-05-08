@@ -141,8 +141,8 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
                 withError error: NSError!) {
         if (error == nil) {
-            self.dismiss(animated: true, completion: nil)
-
+            self.performSegue(withIdentifier: "overviewScreen", sender: nil)
+            
         } else {
             print("Issues while trying to login user\(error.localizedDescription)")
         }
