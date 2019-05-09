@@ -135,7 +135,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
                     return
                 }
                 print("Saved User Successfully into Database")
-                self.dismiss(animated: true, completion: nil)
+                self.performSegue(withIdentifier: "loginSegue", sender: self)
             })
         }
     }
