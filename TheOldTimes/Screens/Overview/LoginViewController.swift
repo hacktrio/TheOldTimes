@@ -53,6 +53,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
         button.translatesAutoresizingMaskIntoConstraints = false
         
         button.addTarget(self, action: #selector(handleLoginRegister), for: .touchUpInside)
+        
         return button
     }()
     
@@ -105,7 +106,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
             }
             print("Signing works!! take me to overview!")
             
-            self.performSegue(withIdentifier: "Overview", sender: nil)
+            self.performSegue(withIdentifier: "loginSegue", sender: self)
         }
     }
 
@@ -142,7 +143,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
                 withError error: NSError!) {
         if (error == nil) {
-            self.performSegue(withIdentifier: "overviewScreen", sender: nil)
+            self.performSegue(withIdentifier: "loginSegue", sender: nil)
             
         } else {
             print("Issues while trying to login user\(error.localizedDescription)")
