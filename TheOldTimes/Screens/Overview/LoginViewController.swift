@@ -103,8 +103,9 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
                 print(error)
                 return
             }
-            //logged in successfull
-            self.dismiss(animated: true, completion: nil)
+            print("Signing works!! take me to overview!")
+            
+            self.performSegue(withIdentifier: "Overview", sender: nil)
         }
     }
 
