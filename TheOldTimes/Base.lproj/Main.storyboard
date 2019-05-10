@@ -10,89 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Google Sign In View Controller-->
-        <scene sceneID="alE-4r-dYj">
-            <objects>
-                <viewController id="swL-ne-Lgz" customClass="GoogleSignInViewController" customModule="TheOldTimes" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tJV-ZH-ILh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YourFolio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEL-3J-LRv">
-                                <rect key="frame" x="57" y="80" width="300" height="51.333333333333343"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="RightCareer" translatesAutoresizingMaskIntoConstraints="NO" id="yTh-Nn-SVl">
-                                <rect key="frame" x="0.0" y="181.33333333333334" width="414" height="339.66666666666663"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g3J-OI-Dys">
-                                <rect key="frame" x="87" y="551" width="240" height="105"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cqj-Xt-6vG" customClass="GIDSignInButton">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="57"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="57" id="2u9-zx-wYB"/>
-                                            <constraint firstAttribute="width" constant="240" id="YzI-zZ-UtM"/>
-                                        </constraints>
-                                    </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXo-aS-rBj">
-                                        <rect key="frame" x="0.0" y="65" width="240" height="40"/>
-                                        <color key="backgroundColor" red="0.14138153195381165" green="0.46265596151351929" blue="0.54680633544921875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="Tff-DY-r0h"/>
-                                            <constraint firstAttribute="width" secondItem="sXo-aS-rBj" secondAttribute="height" multiplier="6:1" id="ehw-SF-8fU"/>
-                                            <constraint firstAttribute="width" constant="240" id="yw8-Rr-onl"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <state key="normal" title="Sign up / Login">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="tappedSigninLoginButton:" destination="swL-ne-Lgz" eventType="touchUpInside" id="MJ2-Yf-3Bc"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="sXo-aS-rBj" secondAttribute="trailing" id="236-Z6-9uD"/>
-                                    <constraint firstItem="Cqj-Xt-6vG" firstAttribute="top" secondItem="g3J-OI-Dys" secondAttribute="top" id="ChY-DF-w3A"/>
-                                    <constraint firstAttribute="width" constant="240" id="G3K-Rf-qHY"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="QEC-gq-p7c"/>
-                                    <constraint firstItem="sXo-aS-rBj" firstAttribute="top" secondItem="Cqj-Xt-6vG" secondAttribute="bottom" constant="8" id="hpj-2d-jpD"/>
-                                    <constraint firstAttribute="height" constant="105" id="lRC-wx-BIF"/>
-                                    <constraint firstAttribute="trailing" secondItem="Cqj-Xt-6vG" secondAttribute="trailing" id="ljY-K2-nEZ"/>
-                                    <constraint firstItem="Cqj-Xt-6vG" firstAttribute="leading" secondItem="g3J-OI-Dys" secondAttribute="leading" id="pMs-hf-zaU"/>
-                                    <constraint firstAttribute="bottom" secondItem="sXo-aS-rBj" secondAttribute="bottom" id="vD0-oe-OdA"/>
-                                    <constraint firstItem="sXo-aS-rBj" firstAttribute="leading" secondItem="g3J-OI-Dys" secondAttribute="leading" id="xTh-nd-Ivg"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="105" id="zh9-ow-7io"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="yTh-Nn-SVl" firstAttribute="leading" secondItem="wUC-G8-eW7" secondAttribute="leading" id="1os-VG-V3p"/>
-                            <constraint firstItem="sEL-3J-LRv" firstAttribute="top" secondItem="wUC-G8-eW7" secondAttribute="top" constant="60" id="ISX-LP-Hth"/>
-                            <constraint firstItem="wUC-G8-eW7" firstAttribute="trailing" secondItem="sEL-3J-LRv" secondAttribute="trailing" constant="57" id="J4V-cv-35X"/>
-                            <constraint firstItem="yTh-Nn-SVl" firstAttribute="trailing" secondItem="wUC-G8-eW7" secondAttribute="trailing" id="XfS-Qa-woj"/>
-                            <constraint firstItem="yTh-Nn-SVl" firstAttribute="top" secondItem="sEL-3J-LRv" secondAttribute="bottom" constant="50" id="b4l-IL-eVM"/>
-                            <constraint firstItem="g3J-OI-Dys" firstAttribute="centerX" secondItem="tJV-ZH-ILh" secondAttribute="centerX" id="gNn-rr-l4t"/>
-                            <constraint firstItem="g3J-OI-Dys" firstAttribute="top" secondItem="yTh-Nn-SVl" secondAttribute="bottom" constant="30" id="mnf-um-bG1"/>
-                            <constraint firstItem="sEL-3J-LRv" firstAttribute="leading" secondItem="wUC-G8-eW7" secondAttribute="leading" constant="57" id="tcR-Yq-xRb"/>
-                            <constraint firstItem="wUC-G8-eW7" firstAttribute="bottom" secondItem="g3J-OI-Dys" secondAttribute="bottom" constant="80" id="ydJ-K5-rWD"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="wUC-G8-eW7"/>
-                    </view>
-                    <connections>
-                        <outlet property="loginImage" destination="yTh-Nn-SVl" id="g5G-1K-X5z"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vXB-KA-XYn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1430" y="115"/>
-        </scene>
         <!--Login View Controller-->
         <scene sceneID="XR8-2O-haY">
             <objects>
@@ -162,7 +79,4 @@
             <point key="canvasLocation" x="1023" y="243"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="RightCareer" width="1366" height="684"/>
-    </resources>
 </document>
