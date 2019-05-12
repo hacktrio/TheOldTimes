@@ -16,6 +16,8 @@ class ViewController: UIViewController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         setupNavbar()
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(handleLogout))
@@ -25,6 +27,10 @@ class ViewController: UIViewController, UISearchBarDelegate {
             perform(#selector(handleLogout), with: nil, afterDelay: 0)
         }
        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
     }
     
     @objc func handleLogout() {

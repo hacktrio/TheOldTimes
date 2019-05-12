@@ -23,8 +23,6 @@ class MessageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBarController?.tabBar.isHidden = true
-        let image = UIImage(named: "messageicon")
         let messagebutton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showChatLog))
         self.navigationItem.rightBarButtonItem = messagebutton
         
@@ -32,6 +30,10 @@ class MessageViewController: UIViewController {
         
         setupComposeButton()
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = true
     }
     
     func setupComposeButton() {
