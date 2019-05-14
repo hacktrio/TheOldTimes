@@ -29,7 +29,7 @@ class ViewController: UIViewController, UISearchBarDelegate {
        
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = false
     }
     

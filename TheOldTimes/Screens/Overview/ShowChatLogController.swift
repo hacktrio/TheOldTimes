@@ -38,7 +38,7 @@ class ShowChatLogController: UICollectionViewController, UITextFieldDelegate {
         
         view.addSubview(containerView)
         containerView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -5).isActive = true
         containerView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         containerView.heightAnchor.constraint(equalToConstant: 50).isActive = true
         

@@ -23,6 +23,7 @@ class MessageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let messagebutton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showChatLog))
         self.navigationItem.rightBarButtonItem = messagebutton
         
@@ -31,10 +32,10 @@ class MessageViewController: UIViewController {
         setupComposeButton()
         
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = true
     }
+    
     
     func setupComposeButton() {
         composeButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
