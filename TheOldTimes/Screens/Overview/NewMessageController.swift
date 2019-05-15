@@ -32,7 +32,7 @@ class NewMessageController: UITableViewController {
     }
     
     func fetchUser() {
-        Database.database().reference().child("users").observe(.childAdded, with: { (snapshot) in
+        Database.database().reference().child("users").queryOrdered(byChild: "name").observe(.childAdded, with: { (snapshot) in
             
             if let dictionary = snapshot.value as? [String:Any] {
                 let user = User()
