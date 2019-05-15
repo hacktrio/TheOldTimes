@@ -18,8 +18,17 @@ class MessageViewController: UIViewController {
         button.layer.masksToBounds = true
         button.tintColor = UIColor.init(red: 0/255, green: 128/255, blue: 128/255, alpha: 1)
         button.translatesAutoresizingMaskIntoConstraints = false
+        
+        button.addTarget(self, action: #selector(handleNewMessage), for: .touchUpInside)
+        
         return button
     }()
+    
+    @objc func handleNewMessage() {
+        let newMessageController = NewMessageController()
+        let navController = UINavigationController(rootViewController: newMessageController)
+        present(navController, animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

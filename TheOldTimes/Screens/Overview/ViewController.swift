@@ -22,11 +22,15 @@ class ViewController: UIViewController, UISearchBarDelegate {
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(handleLogout))
         
+        checkIfUserIsLoggedin()
+       
+    }
+    
+    func checkIfUserIsLoggedin() {
         //User is not logged in, user id (uid) does not exist
         if Auth.auth().currentUser?.uid == nil {
             perform(#selector(handleLogout), with: nil, afterDelay: 0)
         }
-       
     }
     
     override func viewWillAppear(_ animated: Bool) {

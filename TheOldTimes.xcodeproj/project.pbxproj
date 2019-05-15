@@ -23,6 +23,8 @@
 		DAC440FE227FE570005052FF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC440FD227FE570005052FF /* LoginViewController.swift */; };
 		DAFE67FD2287D1C8001A76AB /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE67FC2287D1C8001A76AB /* MessageViewController.swift */; };
 		DAFE67FF2287D1F1001A76AB /* ShowChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE67FE2287D1F1001A76AB /* ShowChatLogController.swift */; };
+		DAFE6801228BC62D001A76AB /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE6800228BC62D001A76AB /* NewMessageController.swift */; };
+		DAFE6805228BE661001A76AB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE6804228BE661001A76AB /* User.swift */; };
 		DE5F4059A0E8F369100AEF69 /* Pods_TheOldTimesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197B94C307097832D9A04677 /* Pods_TheOldTimesTests.framework */; };
 		E41A81D9EE18B60B7D527E75 /* Pods_TheOldTimes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C904908323354FBA8EF409D1 /* Pods_TheOldTimes.framework */; };
 		ED54054B0058EEA9D68D174B /* Pods_TheOldTimesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225ED3520D668A225632052C /* Pods_TheOldTimesUITests.framework */; };
@@ -76,6 +78,8 @@
 		DAC440FD227FE570005052FF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Screens/Overview/LoginViewController.swift; sourceTree = "<group>"; };
 		DAFE67FC2287D1C8001A76AB /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		DAFE67FE2287D1F1001A76AB /* ShowChatLogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowChatLogController.swift; sourceTree = "<group>"; };
+		DAFE6800228BC62D001A76AB /* NewMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
+		DAFE6804228BE661001A76AB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E75873BED842EB9C985C8FA2 /* Pods-TheOldTimesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheOldTimesTests.release.xcconfig"; path = "Target Support Files/Pods-TheOldTimesTests/Pods-TheOldTimesTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +140,7 @@
 				CB89B23E2275432F0089468F /* Overview.storyboard */,
 				DA785ED1225C1292009C23CC /* ViewController.swift */,
 				DAFE67FC2287D1C8001A76AB /* MessageViewController.swift */,
+				DAFE6800228BC62D001A76AB /* NewMessageController.swift */,
 				DAFE67FE2287D1F1001A76AB /* ShowChatLogController.swift */,
 			);
 			path = Overview;
@@ -199,6 +204,7 @@
 				DA785ED9225C1293009C23CC /* Assets.xcassets */,
 				DA785EDB225C1293009C23CC /* LaunchScreen.storyboard */,
 				DA785EDE225C1293009C23CC /* Info.plist */,
+				DAFE6804228BE661001A76AB /* User.swift */,
 				CB678FAB22751CB600DA5102 /* GoogleService-Info.plist */,
 				DA785ED6225C1292009C23CC /* TheOldTimes.xcdatamodeld */,
 				CB89B23C227542EB0089468F /* Screens */,
@@ -489,10 +495,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAFE6801228BC62D001A76AB /* NewMessageController.swift in Sources */,
 				DA785ED2225C1292009C23CC /* ViewController.swift in Sources */,
 				DA785ED0225C1292009C23CC /* AppDelegate.swift in Sources */,
 				DAC440F822759119005052FF /* GoogleSignInViewController.swift in Sources */,
 				DAC440FE227FE570005052FF /* LoginViewController.swift in Sources */,
+				DAFE6805228BE661001A76AB /* User.swift in Sources */,
 				DAFE67FD2287D1C8001A76AB /* MessageViewController.swift in Sources */,
 				DA785ED8225C1292009C23CC /* TheOldTimes.xcdatamodeld in Sources */,
 				DAFE67FF2287D1F1001A76AB /* ShowChatLogController.swift in Sources */,
